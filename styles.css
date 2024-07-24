@@ -42,7 +42,8 @@ header {
     background: url(./images/bg-hero-desktop.svg) no-repeat center center/cover;
 }
 
-.custom-h1-header {
+.custom-h1-header,
+h2 {
     font-family: var(--font-family-Headings);
     font-size: 2.6rem;
     font-weight: var(--font-wght-600);
@@ -65,4 +66,8 @@ header {
 
 .custom-header-container {
     display: flex;
+}
+
+section p {
+    font-size: var(--font-size);
 }
