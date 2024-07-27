@@ -27,7 +27,7 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- Boostrap
 
 ## Author
 

@@ -67,7 +67,14 @@ h2 {
 }
 
 .custom-btn-header {
+    color: white;
     background-color: var(--Pink);
+}
+
+.custom-btn-header:hover,
+.custom-btn-footer-section:hover {
+    cursor: pointer;
+    opacity: 70%;
 }
 
 /* nav section */
@@ -78,13 +85,21 @@ h2 {
 }
 
 
-
 .header-img img {
     margin-left: 7rem !important;
 }
 
 .custom-header-container {
     display: flex;
+}
+
+.navbar button {
+    background-color: white;
+    border: none;
+}
+.navbar button:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 /* section */
@@ -110,21 +125,17 @@ section p {
     font-size: var(--font-size);
 }
 
-.custom-z-index-container {
-   background-color: aqua;
-   margin: 0 35rem;
-}
-
 
 /* Section before footer */
 
 .custom-btn-footer-section {
     font-size: 1.2rem;
     padding: 1.5rem 5rem;
-    border: 0;
+    border: none;
     color: white;
     background-color: var(--Pink);
 }
+
 
 .custom-container-section-before-footer {
     position: relative;
@@ -138,5 +149,187 @@ section p {
 /* footer */ 
 
 footer {
+    color: white;
     background-color: var(--Very-Dark-Cyan);
+}
+
+.custom-padding-footer {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    margin-left: 10px;
+}
+
+/* Links */
+.links {
+    display: flex;
+}
+
+.links ul,
+.links ul li {
+    margin-left: 25px;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.links ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social i {
+    width: 36px;
+    height: 36px;
+    margin: 10px;
+    border: 1px solid white;
+    padding: 9px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social i:hover {
+    cursor: pointer;
+    border: 1px solid var(--Pink);
+    color: var(--Pink);
+}
+
+/* Copyright */
+.copyright {
+    font-size: 12px;
+    text-align: right;
+}
+
+
+@media (min-width: 319px) and (max-width: 480px) {
+    header {
+        background-color: var(--Very-Pale-Cyan) !important;
+        background: url('../images/bg-hero-mobile.svg') no-repeat center center/cover;
+    }
+
+    .custom-h1-header {
+        font-size: 1.5rem;
+        width: 300px !important;
+        text-align: center;
+    }
+    
+    .custom-header-container img {
+        margin-left: 0 !important;
+        width: 400px !important;
+    }
+    
+    .custom-p-header {
+        width: 320px !important;
+        text-align: center;
+    }
+
+    .navbar {
+        margin: 0 !important;
+    }
+
+    .nav-logo-img {
+        width: 100px !important;
+    }
+
+    .navbar {
+        padding: 15px 5px !important;
+        margin: 0px 2px !important;
+    }
+
+    
+    .custom-container {
+        padding: 1.5rem  !important;
+        margin: 0rem 1.5rem !important;
+        text-align: center;
+    }
+
+    .custom-nav-btn {
+        width: 150px !important;
+        height: 50px !important;
+        font-size: 8px !important;
+        margin: 0 !important; 
+        padding: 2px 2px !important;
+        background-color: white;
+        color: var(--Very-Dark-Cyan);
+        font-weight: var(--font-wght-700);
+    }
+
+    .custom-header-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
+        margin: 1rem 1.5rem !important;
+        text-align: center;
+    }
+
+    #one, #two, #three {
+        width: 20em !important;
+        margin-left: 1em !important;
+        margin-right: 1.5em !important;
+    }
+
+    #one .custom-section-img-container img,
+    #three .custom-section-img-container img {
+    margin-left: 0 !important;
+}
+
+    #two .custom-section-img-container img {
+    margin-right: 0 !important;
+}
+
+    #two .custom-section-container {
+        flex-direction: column-reverse !important;
+    }
+
+
+    .custom-h2-footer-section {
+        font-size: 1rem;
+    }
+
+    .custom-btn-footer-section {
+        font-size: 1rem;
+        padding: 1rem 1rem;
+    }
+
+    .custom-container-section-before-footer {
+        margin: 1rem 1.5rem;
+    }
+
+    .links {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links ul,
+    .links ul li {
+        margin-left: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .social {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .social i{
+        margin: 10px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        text-align: center;
+    }
+
 }
