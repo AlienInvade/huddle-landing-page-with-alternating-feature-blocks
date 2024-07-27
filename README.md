@@ -20,14 +20,16 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 
 ### Links
 
-- Live Site URL: (https://alieninvade.github.io/clipboard-landing-page/)
+- Live Site URL: (https://alieninvade.github.io/huddle-landing-page-with-alternating-feature-blocks/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Boostrap
+- CSS Grid
+- CSS Variables
+- Bootstrap
 
 ## Author
 
